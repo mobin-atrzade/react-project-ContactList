@@ -42,6 +42,7 @@ const AddContact = ({ addContactHandler, history }) => {
             </div>
             <button>Add Contact</button>
         </form>
+        
     )
 }
 export default AddContact;
