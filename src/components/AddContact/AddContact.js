@@ -44,5 +44,4 @@ const AddContact = ({ addContactHandler, history }) => {
         </form>
     )
 }
-
 export default AddContact;
