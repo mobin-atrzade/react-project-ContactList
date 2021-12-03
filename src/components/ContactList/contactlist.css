@@ -1,0 +1,72 @@
+.ListWrapper {
+  display: flex;
+  justify-content: center;
+}
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listHeader {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.listHeader h2 {
+  font-size: 22px;
+}
+.listHeader a {
+  margin-left: 150px;
+}
+.listHeader button {
+  width: 50px;
+  height: 25px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #6d28d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.item {
+  background-color: #fff;
+  min-width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.item button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.item .user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item-left {
+  display: flex;
+  align-items: center;
+}
+.item-left a {
+  text-decoration: none;
+  color: #222;
+  font-size: 12px;
+}
