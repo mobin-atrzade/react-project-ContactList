@@ -51,6 +51,11 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
+.editBtn {
+  margin-right: 1rem;
+  border: 1px solid #6d28d9 !important;
+  color: #6d28d9 !important;
+}
 .item img {
   width: 20px;
   height: 20px;
