@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import getOneContact from '../../services/getOneContact'
+import updateContact from '../../services/updateContact'
 // import './addcontact.css'
-const EditContact = ({ editContactHandler, history, match }) => {
+const EditContact = ({ history, match }) => {
     const [contact, setContact] = useState({
         name: "",
         email: ""
@@ -11,15 +12,16 @@ const EditContact = ({ editContactHandler, history, match }) => {
         setContact({ ...contact, [e.target.name]: e.target.value })
     }
 
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
         if (!contact.name || !contact.email) {
             alert("all fildes are mandatory !")
         }
         e.preventDefault()
-        // addContactHandler(contact)
-        editContactHandler(contact, match.params.id)
-        setContact({ name: "", email: "" })
-        history.push("/")
+        try {
+            await updateContact(match.params.id, contact)
+            history.push("/")
+
+        } catch (error) { }
     }
 
     useEffect(() => {

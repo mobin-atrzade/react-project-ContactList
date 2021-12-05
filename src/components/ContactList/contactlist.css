@@ -31,6 +31,20 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
+.search-Bar {
+  min-width: 100%;
+  margin: 20px 0px;
+}
+.search-Bar input {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.search-Bar input:focus {
+  border: 2px solid #6d28d9;
+}
 .item {
   background-color: #fff;
   min-width: 25rem;
@@ -40,7 +54,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .item button {
   outline: none;

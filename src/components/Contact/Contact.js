@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Contact = ({ onDelete, contact }) => {
+    
     const { id, name, email } = contact;
     return (
         <div key={id} className="item">
